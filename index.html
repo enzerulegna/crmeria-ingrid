@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cremería Delicias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff6699;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #ffcc99;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6699;
+        }
+
+        section {
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            margin: 15px 0;
+            color: #ff6699;
+        }
+
+        .product p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .product .price {
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #ffcc99;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cremería Delicias</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="products">
+        <div class="product">
+            <img src="queso.jpg" alt="Queso Fresco">
+            <h2>Queso Fresco</h2>
+            <p>Delicioso queso fresco, perfecto para cualquier ocasión.</p>
+            <p class="price">$4.99</p>
+        </div>
+        <div class="product">
+            <img src="yogurt.jpg" alt="Yogurt Natural">
+            <h2>Yogurt Natural</h2>
+            <p>Yogurt natural, cremoso y saludable.</p>
+            <p class="price">$3.49</p>
+        </div>
+        <div class="product">
+            <img src="mantequilla.jpg" alt="Mantequilla Artesanal">
+            <h2>Mantequilla Artesanal</h2>
+            <p>Mantequilla hecha a mano con ingredientes naturales.</p>
+            <p class="price">$2.99</p>
+        </div>
+        <div class="product">
+            <img src="crema.jpg" alt="Crema para Batir">
+            <h2>Crema para Batir</h2>
+            <p>Crema espesa perfecta para tus recetas de repostería.</p>
+            <p class="price">$5.99</p>
+        </div>
+        <div class="product">
+            <img src="helado.jpg" alt="Helado de Vainilla">
+            <h2>Helado de Vainilla</h2>
+            <p>Helado de vainilla suave y cremoso.</p>
+            <p class="price">$6.49</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cremería Delicias. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
